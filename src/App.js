@@ -11,7 +11,7 @@ class App extends Component {
           <h1 className="App-title">Bienvenidos a Sistemas Operativos</h1>
         </header>
         <p className="App-intro">
-          Sistemas Operativos 1 <span>Douglas Alexander</span>
+          Sistemas Operativos 1 <span>Douglas Alexander Sacalxot Elias</span>
         </p>
       </div>
     );
