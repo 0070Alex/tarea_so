@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import {NavLink, Link} from 'react-router-dom';
-import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fa";
+
 import logo from '../../img/logo.png';
 
 
@@ -52,9 +52,9 @@ const Navbarmenu = () => {
 
                     {/* Responsive Menu Button */}
                     {isResponsiveclose === true ? <> 
-                        <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} > <FiXCircle />   </span>
+                        <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} ></span>
                     </> : <> 
-                        <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} > <FiAlignRight />   </span>
+                        <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} ></span>
                     </>}
 
 
