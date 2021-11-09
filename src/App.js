@@ -1,19 +1,36 @@
-import React, { Component } from 'react';
+import React from 'react';
+import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import './App.css';
-import Category from './Category.js';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <ul>
-          <Category name="Pagina de Inicio" items={['Mision','Vision','Objetivos']}/>
-          <Category name="Productos" items={['Ofertas del Mes','Black Friday','En liquidacion']}/>
-          <Category name="Contacto" items={['Sedes','Ubicacion','Video Informativo']}/>
-        </ul>
-      </div>
-    );
-  }
+import Home from './components/Home';
+import About from './components/About';
+import Online from './components/Online';
+import Offline from './components/Offline';
+import Contact from './components/Contact';
+
+import Navbarmenu from './components/menu/Navbarmenu';
+
+function App() {
+  return (
+    <div>
+      <Router basename="/">
+
+        {/* Add Menu Component */}
+        <Navbarmenu />
+        
+        <Switch> 
+          <Route exact path="/" component={Home}/>
+          <Route path="/About" component={About}/>
+          <Route path="/Online" component={Online}/>
+          <Route path="/Offline" component={Offline}/>
+          <Route path="/Contact" component={Contact}/>
+
+          
+        </Switch>
+      </Router>
+
+    </div>
+  );
 }
 
 export default App;
