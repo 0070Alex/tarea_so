@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import {NavLink, Link} from 'react-router-dom';
-
-import logo from '../../img/logo.jpg';
+import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
+import logo from '../../img/logo.png';
 
 
 const Navbarmenu = () => {
@@ -52,24 +52,24 @@ const Navbarmenu = () => {
 
                     {/* Responsive Menu Button */}
                     {isResponsiveclose === true ? <> 
-                        <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} ></span>
+                        <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} > <FiXCircle />   </span>
                     </> : <> 
-                        <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} ></span>
+                        <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} > <FiAlignRight />   </span>
                     </>}
 
 
                     <ul className={boxClass.join(' ')}>
                     <li  className="menu-item" >
-                        <NavLink exact activeClassName='is-active' onClick={toggleClass} to={`/`}> Inicio </NavLink> 
+                        <NavLink exact activeClassName='is-active' onClick={toggleClass} to={`/`}> Home </NavLink> 
                     </li>
-                    <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/About`}> Productos </NavLink> </li>
-                    <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#">Shop</Link>
+                    <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/About`}> About </NavLink> </li>
+                    <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#"> Shop <FiChevronDown /> </Link>
                         <ul className={boxClassSubMenu.join(' ')} > 
                             <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/Online`}> Online Shop </NavLink> </li>
                             <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> Offline Shop </NavLink> </li>
                         </ul>
                     </li>
-                    <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Contact`}> Sobre Nosotros </NavLink> </li>
+                    <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Contact`}> Contact </NavLink> </li>
 
                     </ul>
 
