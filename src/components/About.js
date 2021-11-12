@@ -5,7 +5,7 @@ const About = () => {
               <div className="sec__one">
                      <table width="50%" align="center">
 	<tr>
-		<td><h1 align="center">Carreras</h1></td>
+		<td><h2 align="center">Carreras</h2></td>
 	</tr>
 	<tr>
 		<td>

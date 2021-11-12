@@ -2,7 +2,7 @@ import React from 'react'
 const Home = () => {
 	return (
         <div className="sec__one">
-			<h1> Nosotros </h1>
+			
 			<table width="60%" align="center">
 		<tr>
 			<td align="center">Misión</td>
