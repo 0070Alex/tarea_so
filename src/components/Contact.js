@@ -12,21 +12,21 @@ const Contact = () => {
 		<fieldset>
 			<legend>Contactenos</legend>
 			<label>Nombre</label><br/>
-			<input type="text" name="">
+			<input type="text" name=""/>
 			<br/><br/>
 			<label>Apellidos</label>
 			<br/>
-			<input type="text" name="">
+			<input type="text" name=""/>
 			<br/><br/>
 			<label>Email</label>
 			<br/>
-			<input type="Email" name="">
+			<input type="Email" name=""/>
 			<br/><br/>
 			<label>Teléfono</label>
 			<br/>
-			<input type="text" name="">
+			<input type="text" name=""/>
 			<br/><br/>
-			<input type="submit" value="Enviar" name="">
+			<input type="submit" value="Enviar" name=""/>
 		</fieldset>		
 		</td>
 	</tr>
