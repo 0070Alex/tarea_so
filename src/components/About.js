@@ -21,6 +21,7 @@ const About = () => {
 				<li>ODONTOLOGÍA</li>
 				<li>PSICOLOGÍA</li>
 				<li>TEOLOGÍA</li>
+				<li>COMMIT PARA SERVICIOS</li>
 			</ul>
 		</td>
 	</tr>
