@@ -52,7 +52,7 @@ const Contact = () => {
 			<br/>
 			PBX: 2411 1800 ext. 1357
 			<br/>
-			Lunes a viernes de 07:00 a 15:00 horas
+			Lunes a Miercoles de 07:00 a 15:00 horas
 		</td>
 	</tr>
 </table>
