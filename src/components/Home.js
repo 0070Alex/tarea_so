@@ -4,7 +4,7 @@ const Home = () => {
         <div className="sec__one">
 			<h1> Nosotros </h1>
 			<table width="60%" align="center">
-		<tr style="font-style: bold">
+		<tr>
 			<td align="center">Misión</td>
 			
 		</tr>
